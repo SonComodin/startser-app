@@ -1,6 +1,7 @@
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
+import Login from "./pages/Login";
 
 import { FC } from "react";
 interface Route {
@@ -11,6 +12,14 @@ interface Route {
     component: FC<{}>
 }
 export const routes: Array<Route> = [
+    
+    {
+        key: 'Login-route',
+        title: 'Login',
+        path: '/Login',
+        enabled: true,
+        component: Login
+    },
     {
         key: 'home-route',
         title: 'Home',
