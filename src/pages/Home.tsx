@@ -40,9 +40,9 @@ const Home: FC<any> = (): ReactElement => {
     <img src="PCF5.png" alt="VL" width="400" height="225"></img>
 </div>
     </Box>
-            
-
+    
         </Box> 
+        
 
         )
           

@@ -8,15 +8,15 @@ const About: FC<any> = (): ReactElement => {
       <Box sx= {{
         flexGrow: 1,
         backgroundColor: '#white',
-        display:'list',
+        display:'table',
         justifyContent:'center',
         alingItems:'center',
-        margin:0,
+        margin:1,
         padding:"0%",
         border: 0,
         height: "auto"
         }}><div style={{ textAlign: "center", height: "auto" }}>
-            <img src="Valelinda2.png" alt="VL" width="50%"></img>
+            <img src="Valelinda2.png" alt="VL" width="55%"></img>
         </div>
             <Box sx={{
                 flexGrow: 1,
@@ -77,22 +77,22 @@ Tenemos –además de todo lo relacionado al rubro de la computación– opcione
                 flexGrow: 1,
                 backgroundColor: '#B3FCAD',
                 display: 'flex',
-                margin: '0px auto',
-                padding:"0%",
                 border: 0,
                 justifyContent:'center',
-        alingItems:'center',
+                alingItems:'center',
+                marginTop:'0',
+
                 
                 
                   width: "auto",
                   height: "auto",
                 }}>
                   <div>
-        <a href="https://twitter.com/PCFactoryCL">
+        <a href="https://www.crunchyroll.com/es/series/GEXH3WKK0/vinland-saga">
           <FaTwitter size={24}  /></a>
-          <a href="https://www.instagram.com/pcfactorycl/?hl=es-la">
+          <a href="https://www.crunchyroll.com/es/series/GEXH3WKK0/vinland-saga">
           <FaInstagram size={24} /></a>
-          <a href="https://www.facebook.com/PCFactoryCL/?locale=es_LA">
+          <a href="https://www.crunchyroll.com/es/series/GEXH3WKK0/vinland-saga">
           <FaFacebook size={24} /></a>
         
 

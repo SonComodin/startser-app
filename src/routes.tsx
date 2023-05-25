@@ -14,16 +14,16 @@ interface Route {
 export const routes: Array<Route> = [
     
     {
-        key: 'Login-route',
+        key: 'login-route',
         title: 'Login',
-        path: '/Login',
+        path: '/',
         enabled: true,
         component: Login
     },
     {
         key: 'home-route',
         title: 'Home',
-        path: '/',
+        path: '/home',
         enabled: true,
         component: Home
     },

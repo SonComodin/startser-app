@@ -23,11 +23,11 @@ const Product: FC<any> = (): ReactElement => {
         border: 1,
         },
       }}
-    > <Card sx={{ maxWidth: 280 }}>
+    > <Card sx={{ maxWidth: "auto" }}>
     <CardActionArea>
       <CardMedia
         component="img"
-        height="140"
+        height="120"
         image="XBOX.jpg"
         alt="XboxOne Series S"
       />
@@ -46,7 +46,7 @@ const Product: FC<any> = (): ReactElement => {
       </Button>
     </CardActions>
   </Card>
-  <Card sx={{ maxWidth: 280 }}>
+  <Card sx={{ maxWidth: "auto" }}>
     <CardActionArea>
       <CardMedia
         component="img"
@@ -70,7 +70,7 @@ const Product: FC<any> = (): ReactElement => {
       </Button>
     </CardActions>
   </Card>
-  <Card sx={{ maxWidth: 280 }}>
+  <Card sx={{ maxWidth: "auto" }}>
     <CardActionArea>
       <CardMedia
         component="img"

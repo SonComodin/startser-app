@@ -12,49 +12,67 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useNavigate } from "react-router-dom";
 
 function Copyright(props: any) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+   PCFactory
     </Typography>
   );
 }
 
 const theme = createTheme();
 
-export default function SignIn() {
+export default function SignIn() { 
+  const navigate = useNavigate();
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    // console.log({
+    //   email: data.get('email'),
+    //   password: data.get('password'),
+    // });
+    let userName = data.get('email')
+    let password = data.get('password')
+    let login = {userName: userName, password: password}
+    let loginJson = JSON.stringify(login);
+    //Enviar los datos al backend
+    fetch('http://localhost:8080/api/login?user_name='+ userName, {
+      method: 'Get'  
+    })
+      .then(response => response.json())
+      .then(result => {
+        if (result.length !== 0){
+          navigate("/home")
+        }
+        console.log(result)
+      })
+      .catch(error => {
+        console.error(error);
+      });
+    console.log(loginJson)
+    console.log(Response)
   };
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" style={{ width:'auto', height:"100%"}}>
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 6,
+          
+            marginTop: 5,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar>
+          <div style={{ textAlign: "center" }}>
+          <img src="PCF1.PNG" alt="MICROPLAY" width="80"></img>
+          </div>
           <Typography component="h1" variant="h5">
-            Sign in
+          iniciar sesión
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -62,7 +80,7 @@ export default function SignIn() {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              label="Ingrese el Usuario"
               name="email"
               autoComplete="email"
               autoFocus
@@ -71,39 +89,40 @@ export default function SignIn() {
               margin="normal"
               required
               fullWidth
-              name="password"
-              label="Password"
+              name="Contraseña"
+              label="Ingrese la contraseña"
               type="password"
               id="password"
               autoComplete="current-password"
             />
             <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
+              control={<Checkbox value="remember" color="success" />}
+              label="Recordar"
             />
             <Button
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              color="success"
+              sx={{ mt: 2, mb: 1 }}
             >
-              Sign In
+              iniciar sesión
             </Button>
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
-                  Forgot password?
+                Olvidaste tu contraseña?
                 </Link>
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                  {"Registrate"}
                 </Link>
               </Grid>
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        <Copyright sx={{ mt: 4, mb: 2 }} />
       </Container>
     </ThemeProvider>
   );
