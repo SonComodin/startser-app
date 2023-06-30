@@ -20,6 +20,7 @@ const Home: FC<any> = (): ReactElement => {
             margin:0,
             padding:"0%",
             border: 0,
+          
             }}> <Carrousel/>
             <Box
       sx={{

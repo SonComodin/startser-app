@@ -43,8 +43,8 @@ const Carrousel: React.FC = () => {
   };
 
   return (
-    <Box sx={{ maxWidth: 450, margin: "auto" }}>
-      <Card sx={{ display: "flex" }}>
+    <Box sx={{ maxWidth: 450, margin: "auto"}}>
+      <Card sx={{ display: "flex"}}>
         <CardMedia sx={{ width: 2250 }} image={products[activeIndex].imageUrl} title={products[activeIndex].name} />
         <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <Typography variant="h5" gutterBottom>
@@ -53,7 +53,7 @@ const Carrousel: React.FC = () => {
           <Typography variant="body2">{products[activeIndex].description}</Typography>
         </CardContent>
       </Card>
-      <Box sx={{ display: "flex", justifyContent: "space-between", marginTop: 2 }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between", marginTop: 2}}>
         <Button onClick={prevSlide}>Anterior</Button>
         <Button onClick={nextSlide}>Siguiente</Button>
       </Box>

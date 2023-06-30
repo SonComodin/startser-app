@@ -17,7 +17,7 @@ export const Footer: FC = (): ReactElement => {
           <Grid item xs={15}>
             <Typography color="black" variant="h5">
             <div style={{ textAlign: "center" }}>
-            <img src="PCF1.PNG" alt="MICROPLAY" width="45"></img>
+            <img src="PCF1.PNG" alt="MICROPLAY" width="30"></img>
             </div>
             </Typography>
           </Grid>

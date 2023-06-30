@@ -43,7 +43,7 @@ const Navbar: FC = (): ReactElement => {
               
             }}
           ><div style={{ textAlign: "center" }}>
-          <img src="PCF1.PNG" alt="MICROPLAY" width="80"></img>
+          <img src="PCF1.PNG" alt="MICROPLAY" width="50"></img>
           </div>
             
             
@@ -99,7 +99,7 @@ const Navbar: FC = (): ReactElement => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           > <div style={{ textAlign: "center" }}>
-            <img src="PCF1.PNG" alt="MICROPLAY" width="80"></img>
+            <img src="PCF1.PNG" alt="MICROPLAY" width="50"></img>
             </div>
             
           </Typography>
