@@ -44,3 +44,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### `PatronCapas-Backend`
+[![CAPAS-BACKEND.png](https://i.postimg.cc/RFrWf7BH/CAPAS-BACKEND.png)](https://postimg.cc/FfZFXJ1r)
+
+### `PatronMVC-Frontend`
+[![MVC-FRONTEND.png](https://i.postimg.cc/x1tGKFxb/MVC-FRONTEND.png)](https://postimg.cc/VJ0bw4cY)
+
+
+### `Diagrama de paquetes`
+[![diagrama-de-paquetes.png](https://i.postimg.cc/650c63XK/diagrama-de-paquetes.png)](https://postimg.cc/ykDcv7xp)
+
+### `Diagrama caso-de-uso`
+[![caso-de-uso.png](https://i.postimg.cc/XvXQz0tb/caso-de-uso.png)](https://postimg.cc/06RYzh8W)
+
+[![diagrama-de-caso-de-uso.png](https://i.postimg.cc/RV9Gzt2G/diagrama-de-caso-de-uso.png)](https://postimg.cc/Dmj1rSvb)
